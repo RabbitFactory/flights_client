@@ -20,7 +20,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/search', form);
+      const res = await axios.post('https://flights-server-7dq6.onrender.com/search', form);
       setFlights(res.data.data);
     } catch (err) {
       alert('Error fetching flights', err);

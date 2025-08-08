@@ -14,13 +14,11 @@ function App() {
       : value;
     setForm({ ...form, [name]: uppercaseValue });
   };
-
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post('https://flights-server-7dq6.onrender.com/search', form);
+      const res = await axios.post('http://localhost:5000/search', form);
       setFlights(res.data.data);
     } catch (err) {
       alert('Error fetching flights', err);
@@ -36,7 +34,7 @@ function App() {
         <input name="origin" placeholder="Origin (e.g. JFK)" onChange={handleChange} required />
         <input name="destination" placeholder="Destination (e.g. LAX)" onChange={handleChange} required />
         <input name="date" type="date" onChange={handleChange} required />
-        <input name="passengers" type="number" min="1" onChange={handleChange} required />
+        <input name="passengers" type="number" min="1" onChange={handleChange} required placeholder="Number of Passengers" />
         <button type="submit">Search Flights</button>
       </form>
 

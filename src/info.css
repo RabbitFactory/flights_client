@@ -1,0 +1,33 @@
+.airport-reference {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.airport-reference h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.airport-reference ul {
+  list-style: none;
+  padding: 0;
+}
+
+.airport-reference li {
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.airport-reference li:last-child {
+  border-bottom: none;
+}
+
+.airport-reference strong {
+  color: #5621d1;
+}

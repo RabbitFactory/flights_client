@@ -54,7 +54,7 @@ input {
 
 input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #8366ea;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
   transform: translateY(-2px);
 }
@@ -156,23 +156,23 @@ button:active {
 }
 
 /* Loading state */
-.App p {
+/* .App p {
   text-align: center;
   font-size: 1.2rem;
-  color: white;
   margin: 2rem 0;
   font-weight: 500;
-}
+} 
+*/
 
 /* Loading animation */
-@keyframes pulse {
+/* @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
-}
+} */
 
-.App p:has-text("Loading") {
+/* .App p:has-text("Loading") {
   animation: pulse 2s infinite;
-}
+} */
 
 /* Responsive design */
 @media (max-width: 768px) {
